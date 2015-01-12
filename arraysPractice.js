@@ -241,12 +241,16 @@ var findOne = function(num1, num2) {
 
 //
 
-var findOne = function(num1, num2) {
+var both = function(num1, num2) {
   for (var i = 0; i < num1; i++) {
     arr1.push(i);
-  } 
+   
     for (var j = 0; j < num2; j++) {
       arr2.push(j);
+    
+      if (arr1[i] === arr2[j]){
+        alert(arr1[i])
+      }
     }
-      arr3.splice(arr1[i],arr2[j])
-}
+  }
+} 
